@@ -15,6 +15,9 @@
 		AF58545E1BFF9B5800981A83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF58545C1BFF9B5800981A83 /* LaunchScreen.storyboard */; };
 		AF5854691BFF9B5900981A83 /* CGSStackAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5854681BFF9B5900981A83 /* CGSStackAnimationTests.m */; };
 		AF5854741BFF9B5900981A83 /* CGSStackAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5854731BFF9B5900981A83 /* CGSStackAnimationUITests.m */; };
+		AF5854841BFFA01700981A83 /* CGSLeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5854821BFFA01700981A83 /* CGSLeaderTableViewCell.m */; };
+		AF5854851BFFA01700981A83 /* CGSLeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5854831BFFA01700981A83 /* CGSLeaderTableViewCell.xib */; };
+		AF58548A1BFFA2FE00981A83 /* CGSLeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5854891BFFA2FE00981A83 /* CGSLeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		AF58546F1BFF9B5900981A83 /* CGSStackAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGSStackAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5854731BFF9B5900981A83 /* CGSStackAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGSStackAnimationUITests.m; sourceTree = "<group>"; };
 		AF5854751BFF9B5900981A83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF5854811BFFA01700981A83 /* CGSLeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSLeaderTableViewCell.h; sourceTree = "<group>"; };
+		AF5854821BFFA01700981A83 /* CGSLeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGSLeaderTableViewCell.m; sourceTree = "<group>"; };
+		AF5854831BFFA01700981A83 /* CGSLeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CGSLeaderTableViewCell.xib; sourceTree = "<group>"; };
+		AF5854881BFFA2FE00981A83 /* CGSLeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSLeader.h; sourceTree = "<group>"; };
+		AF5854891BFFA2FE00981A83 /* CGSLeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGSLeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,8 @@
 		AF58544D1BFF9B5800981A83 /* CGSStackAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				AF5854871BFFA2EA00981A83 /* Models */,
+				AF5854861BFFA2E400981A83 /* Views */,
 				AF5854511BFF9B5800981A83 /* AppDelegate.h */,
 				AF5854521BFF9B5800981A83 /* AppDelegate.m */,
 				AF5854541BFF9B5800981A83 /* ViewController.h */,
@@ -138,6 +148,25 @@
 				AF5854751BFF9B5900981A83 /* Info.plist */,
 			);
 			path = CGSStackAnimationUITests;
+			sourceTree = "<group>";
+		};
+		AF5854861BFFA2E400981A83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF5854811BFFA01700981A83 /* CGSLeaderTableViewCell.h */,
+				AF5854821BFFA01700981A83 /* CGSLeaderTableViewCell.m */,
+				AF5854831BFFA01700981A83 /* CGSLeaderTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AF5854871BFFA2EA00981A83 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF5854881BFFA2FE00981A83 /* CGSLeader.h */,
+				AF5854891BFFA2FE00981A83 /* CGSLeader.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF5854851BFFA01700981A83 /* CGSLeaderTableViewCell.xib in Resources */,
 				AF58545E1BFF9B5800981A83 /* LaunchScreen.storyboard in Resources */,
 				AF58545B1BFF9B5800981A83 /* Assets.xcassets in Resources */,
 				AF5854591BFF9B5800981A83 /* Main.storyboard in Resources */,
@@ -270,6 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF58548A1BFFA2FE00981A83 /* CGSLeader.m in Sources */,
+				AF5854841BFFA01700981A83 /* CGSLeaderTableViewCell.m in Sources */,
 				AF5854561BFF9B5800981A83 /* ViewController.m in Sources */,
 				AF5854531BFF9B5800981A83 /* AppDelegate.m in Sources */,
 				AF5854501BFF9B5800981A83 /* main.m in Sources */,
